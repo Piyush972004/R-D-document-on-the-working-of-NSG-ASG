@@ -73,7 +73,7 @@ Imagine you have a database server that should only be accessed by the applicati
  - 	Slightly more expensive, but necessary for stable public-facing service.
  
  
-SKUs (Stock Keeping Units) – Basic vs. Standard
+## SKUs (Stock Keeping Units) – Basic vs. Standard
 Azure also provides two SKUs for public IPs:
 •	Basic Public IP:
 o	Works with any region and is available to all Azure customers.
@@ -97,7 +97,7 @@ APIs exposed to external clients often need static public IPs for predictable ac
 
 
 
-5. Static vs. Dynamic IPs
+##  Static vs. Dynamic IPs
 Static IP Address
 A static IP address is one that does not change over time. When you allocate a static IP to a resource in Azure, that address is reserved for your subscription and stays the same even if the resource is restarted, shut down, or reassigned.
 Features:
@@ -147,8 +147,7 @@ ________________________________________
 
 
 
-
-7. Assigning Static Public IPs to VMs
+## Assigning Static Public IPs to VMs
 In Microsoft Azure, public IP addresses are used to allow access to virtual machines (VMs) and services from the internet. While dynamic IPs are fine for temporary use, many real-world applications require a static public IP address—an IP that doesn’t change over time. Assigning a static public IP to your VM ensures stable DNS mappings, reliable connectivity, and easier firewall or security configurations.
 ________________________________________
 Why Use a Static Public IP?
