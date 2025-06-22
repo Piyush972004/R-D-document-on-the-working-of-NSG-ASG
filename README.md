@@ -360,7 +360,7 @@ A **Network Interface (NIC)** connects a VM to a Virtual Network (VNet). Every V
 ![Homepage Screenshot](assets/Screenshot%202025-06-22%20221538.png)
 ![Homepage Screenshot](assets/Screenshot%202025-06-22%20221650.png)
 ![Homepage Screenshot](assets/Screenshot%202025-06-22%20221703.png)
-![Homepage Screenshot](assets/Screenshot%202025-06-22%20231345.png)
+
 
 
 
