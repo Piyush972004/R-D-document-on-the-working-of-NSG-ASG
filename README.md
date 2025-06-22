@@ -347,20 +347,20 @@ A **Network Interface (NIC)** connects a VM to a Virtual Network (VNet). Every V
 ---
 ## Screenshots / Demo
 ## DIAGRAM 
-![Homepage Screenshot](assets/Screenshot 2025-06-22 231345.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221016.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221112.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221125.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221136.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221212.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221345.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221416.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221445.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221510.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221538.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221650.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 221703.png)
-![Homepage Screenshot](assets/Screenshot 2025-06-22 231345.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20231345.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221016.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221112.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221125.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221136.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221212.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221345.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221416.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221445.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221510.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221538.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221650.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20221703.png)
+![Homepage Screenshot](assets/Screenshot%202025-06-22%20231345.png)
 
 
 
