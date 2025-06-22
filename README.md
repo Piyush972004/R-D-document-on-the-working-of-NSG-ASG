@@ -345,9 +345,22 @@ A **Network Interface (NIC)** connects a VM to a Virtual Network (VNet). Every V
 3. Review + Create
 
 ---
-
-
-
+## Screenshots / Demo
+## DIAGRAM 
+![Homepage Screenshot](assets/Screenshot 2025-06-22 231345.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221016.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221112.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221125.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221136.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221212.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221345.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221416.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221445.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221510.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221538.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221650.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 221703.png)
+![Homepage Screenshot](assets/Screenshot 2025-06-22 231345.png)
 
 
 
