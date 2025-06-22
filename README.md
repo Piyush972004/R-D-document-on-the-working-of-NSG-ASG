@@ -177,3 +177,155 @@ Best Practices
 •	Use static public IPs only when necessary. If the VM doesn’t need internet access, avoid assigning a public IP at all.
 •	Combine static IPs with Network Security Groups (NSGs) to control who can access your VM.
 •	Consider using Azure DNS if you want to map a domain to the static IP.
+
+________________________________________
+## IMPLIMENTAION GUIDE 
+
+1️⃣ Network Security Group (NSG)
+✅ What is NSG?
+An NSG is a firewall at the subnet or NIC level that controls inbound and outbound traffic using security rules.
+
+⚙️ Key Components
+Security Rules: Defined by priority (lower = higher priority), direction (Inbound/Outbound), source/destination (IP or service tag), protocol (TCP/UDP), port, and action (Allow/Deny).
+
+Default Rules: Azure provides some default rules which allow VNet communication and deny inbound from the internet.
+
+✏️ Create NSG in Azure Portal
+Go to Azure Portal → Search → Network Security Group → Create.
+
+Fill:
+
+Resource Group: Select/Make one
+
+NSG Name: myNSG
+
+Region: Same as VM
+
+Click Review + Create
+
+✏️ Add Security Rules to Allow Specific IP
+Go to your created NSG → Inbound Security Rules → + Add.
+
+Set:
+
+Source: IP Addresses
+
+Source IP: e.g., 103.22.21.10
+
+Destination: Any
+
+Port: 3389 (RDP) or 22 (SSH)
+
+Action: Allow
+
+Priority: 100
+
+Protocol: TCP
+
+❌ Deny Internet Access
+Add Outbound Rule:
+
+Destination: Internet
+
+Port: Any
+
+Action: Deny
+
+Priority: 200
+
+🔐 This blocks all outbound access to the internet (including updates unless exceptions added).
+
+2️⃣ Application Security Group (ASG)
+✅ What is ASG?
+An ASG is a logical grouping of NICs (VMs) to apply NSG rules at application level, useful when multiple VMs serve the same role (e.g., web servers).
+
+🛠 How to Create and Use ASG
+Go to Azure Portal → Search Application Security Groups → Create
+
+Name: webASG
+
+Region: Same as VM
+
+While creating or editing a VM’s NIC, associate it with this ASG.
+
+In NSG rule, under Destination, select ASG and choose webASG.
+
+3️⃣ Public IP Address
+📌 Types of Public IPs
+Type	Scope	Assignment	Notes
+Static	Regional	Fixed IP	Does not change after restart
+Dynamic	Regional	Changes on VM restart	Not guaranteed to be same
+
+✏️ Creating a Public IP
+Go to Azure Portal → Create a Resource → Networking → Public IP Address
+
+Fill:
+
+Name: myPublicIP
+
+Assignment: Static
+
+SKU: Basic (or Standard)
+
+DNS Label: Optional
+
+4️⃣ Associate/De-associate Public IP with VM
+✏️ Associate to VM:
+Go to VM → Networking
+
+Click on NIC → IP Configurations
+
+Click on the config (e.g., ipconfig1) → Under Public IP, click Associate
+
+Choose the created Public IP (myPublicIP)
+
+✏️ De-Associate:
+Follow same steps → Set Public IP to None
+
+5️⃣ Service Tags in NSG
+✅ What is a Service Tag?
+A label that represents a group of IP ranges for a specific Azure service (e.g., Internet, AzureLoadBalancer, VirtualNetwork, Storage).
+
+📌 Examples
+Use Internet to define rules for all external IPs
+
+Use VirtualNetwork for internal traffic
+
+6️⃣ Allocate Static Private IPs to VMs
+🧾 Steps:
+Go to VM → Networking → Click on the Network Interface
+
+Click IP configurations
+
+Click on ipconfig1
+
+Change Private IP Address from Dynamic → Static
+
+Assign the IP you want (e.g., 10.0.0.5)
+
+🧠 Must be within subnet range and not conflict with others.
+
+7️⃣ Create a Network Interface
+💡 What is a Network Interface (NIC)?
+A NIC is what connects your VM to the Virtual Network (VNet). One VM = at least one NIC.
+
+🛠 Create NIC:
+Go to Azure Portal → Search Network Interfaces → Create
+
+Fill:
+
+Name: myNIC
+
+Region: Same as VNet
+
+VNet: Select existing
+
+Subnet: Select
+
+Network Security Group: Select myNSG
+
+Public IP: Optional
+
+
+
+
